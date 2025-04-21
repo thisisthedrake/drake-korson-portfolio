@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details | Design Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/grain.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+  
+  <!-- Grain Overlay
+  <div class="grain-overlay"></div> -->
+  
+  <div class="site-wrapper">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="index.html" class="logo">DK</a>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html#work" class="nav-link">Work</a></li>
+              <li><a href="index.html#about" class="nav-link">About</a></li>
+              <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <!-- Project Detail Section -->
+      <section class="project-detail fade-in" id="project-detail">
+        <div class="container">
+          <div class="loader" id="project-loader">
+            <div class="spinner"></div>
+          </div>
+          
+          <a href="index.html#work" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Projects
+          </a>
+          
+          <div class="project-content" id="project-content" style="opacity: 0;">
+            <!-- Project content will be dynamically inserted here -->
+          </div>
+          
+          <div class="not-found" id="project-not-found" style="display: none;">
+            <h2>Project Not Found</h2>
+            <p>Sorry, the project you're looking for doesn't exist or has been removed.</p>
+            <a href="index.html#work" class="btn btn-primary">Back to Projects</a>
+          </div>
+          
+          <div class="project-navigation">
+            <a href="index.html#work" class="btn btn-primary">
+              <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-info">
+            <a href="index.html" class="footer-logo">JD</a>
+            <p>© 2025 Design Portfolio. All rights reserved.</p>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="back-to-top">
+            <a href="#" id="back-to-top">
+              <span>Back to Top</span>
+              <i class="fa fa-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/project-detail.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
