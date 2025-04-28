@@ -1,17 +1,26 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: main # Replace with your default branch name
 
-media_folder: "static/images/uploads"
-public_folder: "/images/uploads"
+media_folder: "static/uploads" # Folder for uploaded media files
+public_folder: "/uploads"
 
 collections:
   - name: "projects"
     label: "Projects"
-    folder: "content/projects"
-    create: true
+    folder: "js"
+    create: false
     slug: "{{slug}}"
     fields:
+      - { label: "ID", name: "id", widget: "number" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Category", name: "category", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Detail Image", name: "detailImage", widget: "image" }
+      - { label: "Client", name: "client", widget: "string" }
+      - { label: "Timeline", name: "timeline", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Overview", name: "overview", widget: "markdown" }
+      - { label: "Featured", name: "featured", widget: "boolean" }
