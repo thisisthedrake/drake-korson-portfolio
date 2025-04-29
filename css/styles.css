@@ -2,15 +2,15 @@
 :root {
   --color-background: #0a0a10;
   --color-surface: #12121d;
-  --color-primary: #ff8000;
+  --color-primary: #d38638;
   --color-primary-gradient: linear-gradient(135deg, #e9b06e 0%, #d4875f 100%);
   --color-secondary: #ffffff;
   --color-muted: #1e1e2d;
   --color-text: #f0f0f0;
   --color-text-muted: rgba(240, 240, 240, 0.75);
-  --font-sans: 'Inter', sans-serif;
-  --font-display: 'Fraunces', serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-display: 'Playfair Display', serif;
+  --font-mono: 'Space Mono', monospace;
   --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
   --shadow-md: 0 4px 8px rgba(0,0,0,0.15);
   --shadow-lg: 0 8px 16px rgba(0,0,0,0.2);
