@@ -137,10 +137,11 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="card-tags">
             ${project.tags.map(tag => `<span class="card-tag">${tag}</span>`).join('')}
           </div>
-          <h3 class="card-title">${project.title}</h3>
+          
           <p class="card-description">${project.description}</p>
           ${featured ? `<span class="view-project">View Case Study <i class="fas fa-arrow-right"></i></span>` : ''}
-        </div>
+          <h3 class="card-title">${project.title}</h3>
+          </div>
       </div>
     `;
     
