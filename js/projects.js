@@ -35,7 +35,22 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   function populateTagFilter(tags) {
-    // We already have "All" tag added in HTML
+    // Add click event to the "All" button
+    const allButton = tagFilter.querySelector('[data-tag="all"]');
+    if (allButton) {
+      allButton.addEventListener('click', () => {
+        // Remove active class from all buttons
+        document.querySelectorAll('.tag-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        
+        // Add active class to "All" button
+        allButton.classList.add('active');
+        
+        // Filter projects by "all" tag
+        filterProjects('all');
+      });
+    }
     
     // Add other tags
     tags.forEach(tag => {
@@ -142,6 +157,8 @@ document.addEventListener('DOMContentLoaded', function() {
           ${featured ? `<span class="view-project">View Case Study <i class="fas fa-arrow-right"></i></span>` : ''}
           <h3 class="card-title">${project.title}</h3>
           </div>
+
+          
       </div>
     `;
     

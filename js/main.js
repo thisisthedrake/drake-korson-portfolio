@@ -76,13 +76,17 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Add scroll event listener to update header appearance
   const header = document.querySelector('.site-header');
+  const workSection = document.querySelector('#work');
   
-  if (header) {
+  if (header && workSection) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
+      const workSectionTop = workSection.offsetTop;
+      const scrollPosition = window.pageYOffset;
+      
+      if (scrollPosition >= workSectionTop) {
+        header.classList.add('sticky');
       } else {
-        header.classList.remove('scrolled');
+        header.classList.remove('sticky');
       }
     });
   }
@@ -108,6 +112,50 @@ document.addEventListener('DOMContentLoaded', function() {
     
     animateOnScroll.forEach(element => {
       observer.observe(element);
+    });
+  }
+  
+  // Intersection Observer for section animations
+  const sections = document.querySelectorAll('section');
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '-50px'
+  });
+  
+  sections.forEach(section => {
+    sectionObserver.observe(section);
+  });
+  
+  // Smooth scroll with offset
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        const headerOffset = 80;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  
+  // Parallax effect for hero section
+  const hero = document.querySelector('.hero');
+  if (hero) {
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      hero.style.backgroundPositionY = `${scrolled * 0.5}px`;
     });
   }
 });
