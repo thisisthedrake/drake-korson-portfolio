@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
       overview,
       research,
       process,
+      processSteps,
       solution,
       results,
       reflection,
@@ -130,18 +131,18 @@ document.addEventListener('DOMContentLoaded', function() {
           
           <div class="process-steps">
             <div class="process-step">
-              <h4>1. User Flows</h4>
-              <p>Redesigned the key user journeys from browsing to checkout</p>
+              <h4></h4>
+              <p>1</p>
             </div>
             
             <div class="process-step">
-              <h4>2. Wireframes</h4>
-              <p>Created low and high-fidelity wireframes for key screens</p>
+              <h4>2</h4>
+              <p>$2</p>
             </div>
             
             <div class="process-step">
-              <h4>3. Visual Design</h4>
-              <p>Developed a cohesive visual system aligned with brand identity</p>
+              <h4>1</h4>
+              <p>$1</p>
             </div>
           </div>
         </div>

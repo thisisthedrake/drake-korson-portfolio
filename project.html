@@ -21,7 +21,7 @@
     <header class="site-header">
       <div class="container">
         <div class="header-inner">
-          <a href="index.html" class="logo">DK</a>
+          <a href="index.html" class="logo">Drake</a>
           <nav class="main-nav">
             <ul>
               <li><a href="index.html#work" class="nav-link">Work</a></li>
@@ -69,31 +69,106 @@
         </div>
       </section>
     </main>
-    
-    <!-- Footer -->
-    <footer class="site-footer">
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
       <div class="container">
-        <div class="footer-inner">
-          <div class="footer-info">
-            <a href="index.html" class="footer-logo">JD</a>
-            <p>© 2025 Design Portfolio. All rights reserved.</p>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h6 class="section-subtitle">Get in Touch</h6>
+            <h2 class="section-title">Let's talk about your project</h2>
+            <p>
+              I'm always open to discussing new projects, creative ideas or
+              opportunities to be part of your vision.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="details">
+                  <h5>Email</h5>
+                  <a href="mailto:drakekorson@gmail.com">drakekorson@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="icon">
+                  <i class="fa fa-map-marker-alt"></i>
+                </div>
+                <div class="details">
+                  <h5>Location</h5>
+                  <p>Grand Rapids, MI</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Dribbble">
+                <i class="fab fa-dribbble"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Behance">
+                <i class="fab fa-behance"></i>
+              </a>
+            </div>
           </div>
-          <div class="footer-nav">
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div class="back-to-top">
-            <a href="#" id="back-to-top">
-              <span>Back to Top</span>
-              <i class="fa fa-arrow-up"></i>
-            </a>
+
+          <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
           </div>
         </div>
       </div>
-    </footer>
-  </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-info">
+          <a href="#" class="footer-logo">DK</a>
+          <p>© 2025 Design Portfolio. All rights reserved.</p>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="back-to-top">
+          <a href="#" id="back-to-top">
+            <span>Back to Top</span>
+            <i class="fa fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
   
   <!-- Scripts -->
   <script src="js/data.js"></script>

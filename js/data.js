@@ -2,59 +2,77 @@
 const projects = [
   {
     id: 1,
-    title: "Antrum Tradeshow Design and Build",
-    description: "Experience design and engineering of travelling trade show booth",
-    category: "Environment Design",
-    tags: ["3D", "build", "engineering", "experience", "graphic design"],
-    image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&h=800&q=80",
-    detailImage: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=600&q=80",
-    client: "FashionRetail Inc.",
-    timeline: "3 months",
-    role: "Lead UX Designer",
-    overview: "This project involved a complete redesign of a major e-commerce platform that was experiencing high bounce rates and cart abandonment. The goal was to create a more intuitive, engaging shopping experience that would increase conversion rates and customer satisfaction.",
-    research: "I conducted extensive user research including interviews with 25 target users, analysis of heatmaps and user session recordings, and competitive analysis of 5 leading e-commerce platforms. Key findings showed that users were frustrated with the checkout process and had difficulty finding product information.",
-    process: "The design process began with user journey mapping and information architecture restructuring. I created wireframes for key user flows and developed an interactive prototype for user testing. After multiple iterations based on user feedback, I developed a comprehensive UI kit and design system to ensure consistency across the platform.",
-    solution: "The final design featured a streamlined product browsing experience, improved product filtering, a simplified checkout process, and enhanced product pages with more accessible information. The redesign also included a new color scheme and typography that better aligned with the brand's identity.",
-    results: [
-      "42% increase in conversion rate",
-      "35% reduction in cart abandonment",
-      "28% increase in average order value",
-      "58% increase in positive user feedback"
-    ],
-    reflection: "This project highlighted the importance of user research in identifying pain points and opportunities. The success of the redesign was largely due to the iterative approach and continual user testing throughout the process.",
+      title: "Antrum Tradeshow Design and Build",
+      description: "Scalable, tech-forward trade show booth with modular systems",
+      category: "Environment Design",
+      tags: ["3D", "build", "experience", "fabrication", "modular", "instruction"],
+      image: "assets/images/antrum (4).png",
+      detailImage: "assets/images/antrum (4).png",
+      client: "Antrum",
+      timeline: "3 months",
+      role: "3D Designer & Fabrication Lead",
+      overview: "Antrum needed a big presence to showcase their centralized sensing tech—and it had to be modular enough to reconfigure for future shows. I took the concept design, detailed out how it would be built and assembled, and created a full 3D model. From there, I built a clear set of install instructions so the team could break it down, ship it, and set it up again without needing me onsite.",
+      research: "I dug into past booth setups, product demos, and the typical flow of foot traffic at AHR. I also reviewed materials and hardware that could survive shipping and reassembly. The goal was to make something clean, durable, and dead simple to install with minimal tools.",
+      process: "Starting from a rough concept, I modeled the entire booth in 3D, breaking it down into repeatable, modular components. Every piece was designed with transport, assembly, and scalability in mind. I documented the whole system with step-by-step visuals, labels, and callouts so any install crew could follow along without a walkthrough. I also helped manage the fabrication side, making sure what was built matched what was modeled.",    
+      solution: "We ended up with a lightweight, modular booth that could flex to different layouts but still feel like a polished, permanent space. Integrated screens and demo zones let Antrum show off their real-time data feeds, and the material palette balanced their tech identity with a clean, architectural feel.",
+      results: [
+        "Booth used at multiple expos with minimal refitting",
+        "Install guide allowed remote teams to assemble without assistance",
+        "Positive feedback from Antrum’s internal team and attendees",
+        "Helped showcase product demos effectively and drove booth engagement"
+      ],
+      reflection: "This build was a perfect mix of design and execution. I love working on projects where I get to touch both the creative and the physical side—thinking through how something looks, works, ships, and survives real-world use.",
     gallery: [
-      "https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
-      "https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+      "assets/images/antrum (1).png",
+      "assets/images/antrum (2).png",
+      "assets/images/antrum (3).png",
+      "assets/images/antrum (5).png",
+      "assets/images/antrum (6).png",
     ],
     featured: true
   },
   {
     id: 2,
-    title: "Mobile Banking App",
-    description: "A user-centered redesign of a banking application focused on simplifying financial management.",
-    category: "UX/UI Design",
-    tags: ["ux", "mobile", "fintech"],
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&h=800&q=80",
-    detailImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=600&q=80",
-    client: "NextGen Financial",
-    timeline: "4 months",
-    role: "UX Designer & Researcher",
-    overview: "NextGen Financial needed a complete overhaul of their mobile banking application to better serve their increasingly digital-native customer base. The existing app had poor ratings and was losing users to competitor banks with more intuitive digital experiences.",
-    research: "I led a comprehensive research phase that included competitive analysis, stakeholder interviews, and moderated usability testing with current app users. We identified key pain points in transaction history, money transfers, and account management features.",
-    process: "Using insights from the research phase, I developed user personas and journey maps to guide our design decisions. I created wireframes and interactive prototypes that were iteratively tested with users. The design system was developed in collaboration with the brand team to ensure consistency with the bank's visual identity.",
-    solution: "The redesigned app featured a dashboard with customizable widgets, simplified transaction flows, improved search and filtering capabilities, and enhanced security features. We also introduced personalized insights and financial wellness tools based on user spending patterns.",
-    results: [
-      "App store rating increased from 2.8 to 4.6 stars",
-      "87% of users reported improved satisfaction",
-      "User retention increased by 34%",
-      "29% increase in daily active users"
-    ],
-    reflection: "This project taught me the importance of balancing security requirements with usability in financial applications. The collaborative approach with stakeholders from compliance, security, and marketing was crucial to the project's success.",
+      title: "Weathering Emotions – Cloud Exhibit",
+      description: "Interactive LED cloud installation for children’s museum exhibit on emotions",
+      category: "Experience Design",
+      tags: ["LED", "interactive", "fabrication", "programming", "3D", "museum"],
+      image: "assets/images/grcm-cloud (1).jpg",
+      detailImage: "assets/images/grcm-cloud (1).jpg",
+      client: "Grand Rapids Children's Museum",
+      timeline: "6 weeks",
+      role: "Visual Designer & Technical Fabricator",
+      overview: "For the Weathering Emotions exhibit, I was tasked with designing and building a large-scale interactive cloud that could visually represent different emotional states using light. The goal was to create something playful and calming, while also durable enough for a high-traffic children’s space.",
+      research: "I collaborated with the museum team to understand the emotional learning goals of the exhibit. I also looked at existing interactive art installations and LED diffusion techniques to ensure the cloud would be both visually effective and safe for kids to engage with up close.",
+      process: "I started by designing the overall form of the cloud and planning out how internal LED lighting could shift color and intensity to reflect different emotional states. I engineered the internal structure, programmed the LED behavior using Arduino, and built out a wiring plan that museum staff could maintain long-term. I also helped select materials that diffused light well while still holding up to wear.",
+      processSteps: [
+        {
+          title: "Design",
+          description: "I started by designing the overall form of the cloud and planning out how internal LED lighting could shift color and intensity to reflect different emotional states. I engineered the internal structure, programmed the LED behavior using Arduino, and built out a wiring plan that museum staff could maintain long-term. I also helped select materials that diffused light well while still holding up to wear."
+        },
+        {
+          title: "Solution",
+          description: "The final build was a suspended cloud structure with fully addressable LEDs that shift through colors in smooth, animated transitions tied to the emotional themes of the exhibit. The result was a glowing, ambient centerpiece that gave kids a chance to explore emotional regulation through light and environment."
+        },
+        {
+          title: "Results",
+          description: "Successfully installed on time and under budget. The cloud became a focal point of the Weathering Emotions exhibit, and the LED patterns supported the exhibit storytelling goals effectively. Museum staff were trained to operate and maintain the system easily."
+        }
+      ],
+      solution: "The final build was a suspended cloud structure with fully addressable LEDs that shift through colors in smooth, animated transitions tied to the emotional themes of the exhibit. The result was a glowing, ambient centerpiece that gave kids a chance to explore emotional regulation through light and environment.",
+      results: [
+        "Successfully installed on time and under budget",
+        "The cloud became a focal point of the Weathering Emotions exhibit",
+        "LED patterns supported the exhibit storytelling goals effectively",
+        "Museum staff were trained to operate and maintain the system easily"
+      ],
+      reflection: "This was a tight-turnaround build where I got to flex both creative and technical muscles—from sketching cloud forms to coding light transitions. It was also meaningful to contribute to something built to help kids understand and process their emotions in a playful way.",
     gallery: [
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
-      "https://images.unsplash.com/photo-1563013544-08f23ac9a39f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
-      "https://images.unsplash.com/photo-1611174743420-3d7df880ce32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+      "assets/images/grcm-cloud (2).jpg",
+      "assets/images/grcm-cloud (3).jpg",
+      "assets/images/grcm-cloud (4).jpg",
+      "assets/images/grcm-cloud (5).jpg",
+      "assets/images/grcm-cloud (6).jpg",
     ],
     featured: true
   },

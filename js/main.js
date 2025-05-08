@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
+  // Add animation to the mobile menu icon
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+  });
+  
   // Back to top functionality
   const backToTopButton = document.getElementById('back-to-top');
   
