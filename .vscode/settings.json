@@ -1,0 +1,12 @@
+{
+    "piny.project_settings": {
+        "open-pages": [
+            "index.html"
+        ],
+        "component-settings": {
+            "index.html:::Temp": {
+                "black-box": true
+            }
+        }
+    }
+}
