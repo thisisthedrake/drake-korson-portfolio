@@ -1,48 +1,94 @@
 /* ===================================================================
- * Project Page Styles
+ * Project Page Styles - Vintage Edition
  * ------------------------------------------------------------------- */
 
 .project-hero {
-  padding: calc(80px + var(--space-2xl)) 0 var(--space-2xl);
-  background: var(--color-light-gray);
+  padding: calc(120px + var(--space-2xl)) 0 var(--space-2xl);
+  background: 
+    linear-gradient(45deg, var(--color-cream) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--color-cream) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--color-warm-white) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--color-warm-white) 75%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+  position: relative;
+}
+
+.project-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(245, 241, 232, 0.8) 0%, rgba(254, 252, 247, 0.6) 100%);
 }
 
 .project-hero__content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
   gap: var(--space-2xl);
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .project-category {
-  color: var(--color-accent);
-  font-size: 0.9rem;
+  color: var(--color-sage-green);
+  font-family: var(--font-mono);
+  font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: var(--space-sm);
-  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: var(--space-md);
+  font-weight: 700;
 }
 
 .project-hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(3rem, 6vw, 6rem);
   margin-bottom: var(--space-md);
+  position: relative;
+}
+
+.project-hero h1::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 150px;
+  height: 6px;
+  background: var(--color-burnt-orange);
+  transform: skew(-15deg);
 }
 
 .project-subtitle {
-  font-size: 1.25rem;
-  color: var(--color-secondary);
-  line-height: 1.4;
+  font-size: 1.3rem;
+  color: var(--color-warm-gray);
+  line-height: 1.5;
+  font-style: italic;
 }
 
 .project-hero__image {
   position: relative;
 }
 
+.project-hero__image::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: 20px;
+  bottom: 20px;
+  background: var(--color-forest-green);
+  z-index: -1;
+}
+
 .project-hero__image img {
   width: 100%;
   height: auto;
-  border-radius: var(--border-radius);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 6px solid var(--color-charcoal);
+  filter: sepia(20%) contrast(1.1) brightness(1.05);
+  position: relative;
+  z-index: 1;
 }
 
 .project-content {
@@ -51,72 +97,146 @@
 
 .project-details {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 350px 1fr;
   gap: var(--space-2xl);
   align-items: start;
 }
 
 .project-info {
-  background: var(--color-light-gray);
-  padding: var(--space-lg);
-  border-radius: var(--border-radius);
+  background: var(--color-warm-white);
+  padding: var(--space-xl);
+  border: 6px solid var(--color-charcoal);
   position: sticky;
-  top: 100px;
+  top: 140px;
+  position: relative;
+}
+
+.project-info::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  right: 12px;
+  bottom: 12px;
+  background: var(--color-mustard);
+  z-index: -1;
 }
 
 .project-info h3 {
   margin-bottom: var(--space-md);
-  color: var(--color-primary);
+  color: var(--color-forest-green);
 }
 
 .project-meta {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  gap: var(--space-md);
 }
 
 .meta-item {
-  font-size: 0.9rem;
-  line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--color-cream);
+}
+
+.meta-item:last-child {
+  border-bottom: none;
 }
 
 .meta-item strong {
-  color: var(--color-primary);
+  color: var(--color-charcoal);
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: var(--space-xs);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.project-description {
+  background: var(--color-warm-white);
+  padding: var(--space-xl);
+  border: 6px solid var(--color-charcoal);
+  position: relative;
+}
+
+.project-description::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  right: 12px;
+  bottom: 12px;
+  background: var(--color-sage-green);
+  z-index: -1;
 }
 
 .project-description h3 {
   margin-top: var(--space-xl);
   margin-bottom: var(--space-md);
-  color: var(--color-primary);
+  color: var(--color-forest-green);
+  position: relative;
 }
 
 .project-description h3:first-child {
   margin-top: 0;
 }
 
+.project-description h3::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  width: 20px;
+  height: 4px;
+  background: var(--color-burnt-orange);
+  transform: translateY(-50%);
+}
+
 .project-description p {
   margin-bottom: var(--space-md);
-  line-height: 1.6;
-  color: var(--color-secondary);
+  line-height: 1.7;
+  color: var(--color-warm-gray);
+  font-size: 1.1rem;
 }
 
 .project-description ul {
   margin-bottom: var(--space-md);
-  padding-left: var(--space-md);
+  padding-left: var(--space-lg);
 }
 
 .project-description li {
-  margin-bottom: var(--space-xs);
-  color: var(--color-secondary);
+  margin-bottom: var(--space-sm);
+  color: var(--color-warm-gray);
   line-height: 1.6;
+  font-size: 1rem;
+  position: relative;
+}
+
+.project-description li::before {
+  content: '→';
+  position: absolute;
+  left: -24px;
+  color: var(--color-burnt-orange);
+  font-weight: bold;
 }
 
 .project-navigation {
   padding: var(--space-2xl) 0;
-  background: var(--color-light-gray);
-  border-top: 1px solid var(--color-border);
+  background: var(--color-charcoal);
+  border-top: 8px solid var(--color-burnt-orange);
+  position: relative;
+}
+
+.project-navigation::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: var(--color-mustard);
 }
 
 .nav-links {
@@ -125,28 +245,78 @@
   align-items: center;
 }
 
+.nav-links .btn {
+  border-color: var(--color-cream);
+  color: var(--color-cream);
+}
+
+.nav-links .btn:hover {
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+}
+
+.nav-links .btn--outline {
+  background: transparent;
+  border-color: var(--color-mustard);
+  color: var(--color-mustard);
+  box-shadow: 8px 8px 0px var(--color-mustard);
+}
+
+.nav-links .btn--outline:hover {
+  background: var(--color-mustard);
+  color: var(--color-charcoal);
+}
+
 .project-gallery {
   padding: var(--space-2xl) 0;
 }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-xl);
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-item::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  right: 12px;
+  bottom: 12px;
+  background: var(--color-sage-green);
+  z-index: -1;
 }
 
 .gallery-item img {
   width: 100%;
   height: auto;
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 6px solid var(--color-charcoal);
+  filter: sepia(15%) contrast(1.05) brightness(1.02);
+  position: relative;
+  z-index: 1;
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .project-details {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .project-hero__content {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+  
+  .project-hero h1::after {
+    left: 50%;
+    transform: translateX(-50%) skew(-15deg);
   }
   
   .project-details {
@@ -166,5 +336,35 @@
   .nav-links .btn {
     width: 100%;
     text-align: center;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-info,
+  .project-description {
+    border-width: 4px;
+  }
+  
+  .project-info::before,
+  .project-description::before {
+    top: -8px;
+    left: -8px;
+    right: 8px;
+    bottom: 8px;
+  }
+  
+  .gallery-item::before {
+    top: -8px;
+    left: -8px;
+    right: 8px;
+    bottom: 8px;
+  }
+  
+  .gallery-item img {
+    border-width: 4px;
   }
 }
